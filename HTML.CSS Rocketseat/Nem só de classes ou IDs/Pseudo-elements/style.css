@@ -1,0 +1,18 @@
+/* li {
+    position: relative;
+}
+li::before {
+    content: ">"
+}
+li::after {
+    content: "";
+    width: 1000px ;
+    height: 1px ; 
+    background-color: red ;
+    position: absolute;
+    bottom: 0;
+} */
+/* p:nth-of-type(2)::first-line{
+    font-weight: bold;
+} */
+/* como o (::) pode ser adicionado conteudo em html no css usando ::before/::after ::first-line e etc, mas para isso ter sucesso tem que se usar o content SEMPRE. */

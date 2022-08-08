@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+}
+header {
+  height: 400px;
+  border: 7px dashed red;
+  background-color: #348888;
+  background-image: url(/hp\ ordem\ da\ fenix.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90px;
+  background-origin: border-box;
+  background-clip: border-box;
+  background-attachment: scroll;
+  background: linear-gradient(270deg, #024059, #025940, #03a64a);
+}

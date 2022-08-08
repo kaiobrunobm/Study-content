@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
+
+*{
+    font-family:'Poppins', sans-serif;
+    margin: 0;
+    letter-spacing: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    background-color: #e3eaf0;
+    color: #747d89;
+    font-size: 16px;
+    padding: 2rem 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+}
+
+h1 {
+    color: #000;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #7ac402;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.slider {
+    display: flex;
+}
+
+.slider .card {
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+    -webkit-box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.75);
+    box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.75);
+    width: 100%;
+    max-width: 300px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider .card .like {
+    background-image: url("https://github.com/Cassianosch/programador.cs-reels/blob/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart.png?raw=true");
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    display: flex;
+    place-self: flex-end;
+    transition: 0.3s all ease;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+
+}
+
+.slider .card .like:hover {
+    background-image: url("https://github.com/Cassianosch/programador.cs-reels/blob/75c124c5a1b82f9168513e17dfae83f4fc4d0857/slider-produtos-simples/assets/images/ic-heart-red.png?raw=true");
+
+}
+
+.slider .card img.products {
+    width: 100%;
+}
+
+.slider .card h4.title {
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+.slider .card .rating {
+    color: #ffc002;
+}
+
+.slider .card .price {
+    display: flex;
+    gap: 10px;
+    margin: 0.5rem 0;
+
+}
+
+.slider .card .price h5:first-child {
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #b6b7b9;
+}
+
+.slider .card .price h5:last-child {
+    font-weight: 600;
+    color: #747d89;
+}
+
+
+.slider .card a.button{
+    border: 1px solid #94d033;
+    border-radius: 30px;
+    color: #94d033;
+    padding: 0.5rem ;
+    margin-bottom: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+
+.slider .card a.button:hover{
+    background-color: #94d033;
+    color: #fff;
+}

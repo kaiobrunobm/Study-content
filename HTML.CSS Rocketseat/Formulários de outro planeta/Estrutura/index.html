@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <form id="contato" action="">
+        <fieldset form="contato" name="inputs-contact">
+            <legend>Contato</legend>
+
+            <label>Nome</label>
+            <input type="text">
+        </fieldset>
+    </form>
+    <br>
+    <hr>
+    <!-------------------------------------- Duas maneiras diferentes de usar label ------------------------------>
+    <label for="nome">Nome:</label>
+    <input id="nome" type="">
+    <br>
+    <hr>
+    <label>
+        Nome:
+        <input type="text">
+    </label>
+    <!--------------------------------------------------------- Fim ------------------------------------------->
+    <br>
+    <hr>
+    <!--------------------------------------------------------Button ----------------------------------------->
+    <!-- Em um form é possivel ter um botão que vai enviar esse formulario de varios tipos (type), submite (Enviar formulario), reset (voltar conteudo do input ao inicio), button (funcionalidades de um botão comum).-->
+    <form action="">
+        <input type="text" value=""> <!--Input com type text, caixa para receber texto-->
+        <button type="reset">Limpar</button> <!--Botão com funcionalidade de limpar caixa-->
+    </form> <!--Tudo dentro de um formulário.-->
+
+    <br>
+    <hr>
+    <!-- Outros atributos que os buttons podem receber são autofocus (Assim que o usuario entrar na pagina a função do botão vai ser focada ou seja se o usuario entrar na pagina e clicar enter o formulário vai ser enviado), disabled (botão desabilitado), name/value (São atributos avançados/não conhecido ainda), form (Linkar a um formulario qualquer)-->
+    <form action="">
+        <input type="checkbox" name="" id="">
+        <button autofocus >Clique aqui</button>
+    </form>
+    <!-------------------------------------------------------- FIM ---------------------------------------------------->
+    <br>
+    <hr>
+    <!-------------------------------------------------------- datalist ----------------------------------------------->
+    <!-- Inputs de listas com opções colocas por mim -->
+    <form >
+        <!------------------------------ Lista de frutas ------------------------------------->
+        <!-- nesse imput é dado o tipo dele (texto) a lista que ele vai pegar (fruitsdata) que foi dado no id da lista, e o texto dentro do input para informação -->
+        <input
+        type="text"
+        list="fruitsdata"
+        placeholder="Escolha uma fruta"
+        >
+        <!-- Nesse data list foi adicionado os "objetos" da lista e seu id que vai ser utilizado no input -->
+        <datalist id="fruitsdata">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Mango</option>
+            <option>Orange</option>
+            <option>Cherry</option>
+        </datalist>
+        <!--------------------------------------- Lista de cores ----------------------------------------------->
+        <!-- Nesse data list foi adicionado as cores da palheta de cores da lista e seu id que vai ser utilizado no input -->
+        <datalist id="colordata">
+            <option>#ff0000</option>
+            <option>#00ff00</option>
+            <option>#0000ff</option>
+        </datalist>
+        <!-- nesse imput é dado o tipo dele (cores) a lista que ele vai pegar (colordata) que foi dado no id da lista, e o texto dentro do input para informação -->
+        <input 
+        type="color"
+        list="colordata"
+        placeholder="Escolha uma cor"
+        >
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+/* o seletor para puxar a class é o (.) */
+/* .vermelho {
+    color: red;
+} */
+
+/* para usar o seletor de id no css se usa a (#) */
+/* #content { 
+    color: orange;
+} */
+/* #title {
+    color: purple;
+} */
+/* exite tambem seletores de atributos, como o exemple abaixo, usamos o seletor ([]) para puxar o atributo title */
+/* [title] {
+    color: purple;
+} */
+/* hover é uma usabilidade na pagina que quando o  usuario passar o mouse na tag escolhida vai mudar sua estilização */
+/* h1:hover {
+color: red;
+} */
+/* Nesse formato fica igual uma busca de arquivos no windows explorer vai se procurar na sequecia dada por mim e vai adicionar o estilo a todo conteudo compativel */
+/* body article h2 {
+    color: red;
+} */
+/* já aqui faz a mesma coisa que a passada mas não vai fazer nenhuma procura e sim ir diretamente ao indicado */
+/* body > ul > li {
+    color: blue;
+} */
+/* O seletor + serve para puxar uma tag irmã da outra, com ligação direta*/
+/* h1 + p {
+    color: purple;
+}
+button + button {
+    margin-left: 36px;
+} */
+/* no seletor irmão passado ele vai puxar uma tag relacionada diretamente, já essa vai puxar todas tags irmãs diretamente ou seja todas as tags irmas a h1 que são p vão ser puxadas */
+/* h1 ~ p { 
+    color: red;
+} */
+/* a utilização da class para puxar uma tag especifica é feita assim, mas ela perde totalmente a função da class, que é  classificar varias coisas e não uma diretamente */
+ul > li[class="red"] {
+    color: red;
+}

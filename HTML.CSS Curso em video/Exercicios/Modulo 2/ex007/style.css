@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightblue;
+}
+#title {
+    color: springgreen;
+}
+
+h2 {
+    color: salmon;
+
+}
+
+#subtitle {
+    color: darkblue;
+}
+
+.title-basic {
+    color: green;
+}
+
+.title-intermediate {
+    color: yellow;
+}
+
+.title-advanced {
+    color: red;
+}

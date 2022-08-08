@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+font-family:Poppins;
+font-size:40px;
+}
+/* .box {
+    display:flex;
+    border: 1px dashed red;
+    flex-direction: row;
+} 
+.box div {
+    border: 1px solid; 
+    flex-basis: none;
+}
+.box div:nth-child(4), 
+.box div:nth-child(3){
+    flex-grow: 1;
+    width: 250px;
+}
+.box div:nth-child(1), 
+.box div:nth-child(2) {
+    flex-grow: 3;
+} */
+/* .box {
+    display: flex;
+    border: 1px dashed red;
+    width: 160px;
+}
+.box div {
+    border: solid 1px;
+    flex: 1 0 40px;
+}
+.box div:nth-child(2), 
+.box div:nth-child(3) {
+    flex-shrink: 0;
+} */
+
+/* .page {
+    border: 2px solid ;
+    min-height: 100vh;
+    display: flex;
+    flex: 1;}
+
+aside {
+    background: lightgreen;
+    flex: 1;
+}
+main {
+    background:lightblue;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+main section:nth-child(1) {
+    background: lightgoldenrodyellow;
+    flex: 2 ;
+}
+main section:nth-child(2) {
+    background:lightsalmon;
+    flex: 0 420px;
+}
+main section:nth-child(3) {
+    background:rgb(255, 131, 149);
+    flex: 1 ;
+} */
+.box {
+    display: flex;
+    border: 1px dashed red;
+}
+.box div {
+    border: 1px solid;
+}
+.box div:nth-child(1){
+    order: 0;
+}
+.box div:nth-child(2) {
+    order: 0;
+}
+.box div:nth-child(3) {
+    order: 0;
+}
+.box div:nth-child(4) {
+    order: 0;
+}

@@ -1,0 +1,14 @@
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-stretch:semi-condensed;
+    letter-spacing: 4px;
+    word-spacing: 1em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: underline wavy;
+    text-align: center;
+    text-shadow: 1px 5px 3px red;
+}

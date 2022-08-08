@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptação de imagens</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Imagens que mudam de tamanho de acordo com o aparelho</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+        <!--As tags acima são  tag que irão mudar a imagem na tela do site de acordo com a quatidade de tela disponivel do usuario.-->
+        <!--A imagem base é sempre a imagem padra do site e acima dessa imagem nós colocamos as imagens para telas diferentes na ordem do menor ao maior-->
+    </picture>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formuláro</title>
+</head>
+<body>
+    <!---------------------------- input --------------------------------->
+
+    <!-- Atributos gerais ou quase gerais-->
+
+    <!-- autocomplete é um atributo que vai usar o autocomplete do google para indicar seus ultimos uso nesse input de acordo com sua indicação -->
+    <p><strong>Geral ou quase geral</strong></p>
+    <input type="text" autocomplete="email" />
+    <br />
+    <hr />
+    <!-- autofocus vai focar o curso nesse input sempre vc entrar na pagina, e só pode ter um por pagina -->
+    <input type="text" autofocus />
+    <br />
+    <hr />
+    <!-- disabled vai desabilitar o input, um atributo parecido é o readonly que tem a mesma função só que com o visual alterado -->
+    <input type="text" disabled />
+    <input type="text" value="" readonly>
+    <br />
+    <hr />
+    <!-- value  vai dar um valor pra esse input/ já vai ser preenchido por você sem que o usuario precise preencher, se você quiser que  esse input tambem não seja alterado pode junta o atributo disabled ao atributo disabled-->
+    <input type="text" value="Qualquer" />
+    <input type="text" value="Qualquer desabilitado" disabled>
+    <br />
+    <hr />
+    <!-- o atributo form e name são melhores juntos já que se trata de backend, o atributo form serve pra linkar o input a um form pelo id e o name serve para não haver problema no backend (Não há conhecimento ainda) -->
+    <form id="meu-form"></form>
+    <input type="password" name="senha" form="meu-form" />
+    <br />
+    <hr />
+    <!-- required é um atributo que informa que o preenchimmento desse input é OBRIGATORIO -->
+    <input type="text" required />
+    <br />
+    <hr />
+    <!-- O placeholder serve para por um texto no input sem interferencia na função do input, ou seja vai ter um textinho para indicar o que o inout faz com feito abaixo, mas não devemos substituir o label já que o label serve com acessibilidade para leitores de tela ou outros -->
+    <input type="email" placeholder="Digite seu email" />
+    <br />
+    <hr />
+    <!-- Fim do atributos gerais -->
+
+<!-- o type password com é um dado muito importante tem varios atributos -->
+    <form action="">
+        <p><strong>Password</strong></p>
+        
+        <!-- minlength serve para indicar o minimo de caracteres que essa senha aceita -->
+        <input type="password" minlength="4">
+        <br>
+        <hr>
+        <!-- maxlength é o numero maximo de caracteres -->
+        <input type="password"  maxlength="4">
+        <br>
+        <hr>
+        <!-- size é o tamanho do input -->
+        <input type="password"  size="8">
+        <br>
+        <hr>
+        <!-- pattern é um atributo que vai formar um padrão pra senha que vc indicar e o title nesse codigo abaixo vai informar qual o padrão que vc deseja para o usuario -->
+        <input type="password" pattern="[0-9a-fA-F]{4,8}" title="Coloque uma sequência hexadecimal">
+        <br>
+        <hr>
+        <!-- desabilitado e desabilitado com visual diferente -->
+        <input type="password" disabled >
+        <input type="password" readonly >
+        <br>
+        <hr>
+        <!-- atributo que  vai permitir envio do formulario apenas com esse input preenchido, no caso sempre vai ter um atributo required no input password -->
+        <input type="password" required >
+        <br>
+        <hr>
+        <!-- no caso do mabile vai abrir o teclado numerico não o teclado normal -->
+        <input type="password" inputmode="numeric" >
+        <br>
+        <hr>
+        <!-- vai usar o gerenciador de senhas do user agent (navegador) para seu imput, na senha existe 3 modos, on/off/new-password -->
+        <input type="password" autocomplete="on" > <!--Permite a sugestão para a senha do site ou indicar nova senha-->
+        <input type="password" autocomplete="off" > <!--Desabilita a função do autocomplete do navegador-->
+        <input type="password" autocomplete="new-password" > <!-- Permite sugestão de nova senha-->
+        <!-- FIM de password-->
+        <br>
+        <hr>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <form action="">
+        <p><strong>Email</strong></p>
+
+        <!-- esse atributo permite que o usuario coloque mais de um email/conteudo separado por virgula -->
+        <input type="email" multiple >
+        <br>
+        <hr>
+        <!-- esse atributo já foi explicado acima -->
+        <input type="email" pattern=".+@gmail\.com" title="Apenas gmail"> <!--Explicar o sentido desse padrão, o .+ (.)qualquer  caracter (+)1 ou + vezes o (\) foi usado para aceitar a pontuação como algo literal e não codigo-->
+        <br>
+        <hr>
+        <!-- datalist serve para adicionar um lista de sugestão ao input para o usuario  escolher entre as opções -->
+        <datalist id="emaildata">
+            <option>Kaiobruno@gmail.com</option>
+            <option>bmkaiobruno@gmail.com</option>
+        </datalist>
+        <input type="email"
+        list="emaildata"
+        >
+        <br>
+        <hr>
+    </form>
+    <form>
+        <p><strong>URL</strong></p>
+        <input type="url" placeholder="http://exemplo.com" pattern=".*\.com\.br*"><!--.* (.) qualquer caracter (*) multiplas vezes (\)usada para validar pontuação-->
+        <br>
+        <hr>
+        <!-- Verificação ortografica para o input podendo ser ativa (true) ou desativada (false) -->
+        <input type="url" spellcheck="true"><!--ativa-->
+        <input type="url" spellcheck="false"><!--desativada-->
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <form action="" method="post" enctype="multipart/form-data"> <!--Sempre no uso de input do tipo file usar esses atributos-->
+        <p><strong>Arquivo</strong></p>
+
+        <!-- Vai definir quais tipos de arquivos vão ser aceitos -->
+        <input type="file" accept="image/*"><!--(/*) vai  informar que todo tipo de imagem no caso vão ser aceitos-->
+        <br>
+        <hr>
+        <!-- Vai ter a função de permitir a seleção de mutiplos arquivos -->
+        <input type="file" multiple>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+<hr>
+<br>
+    <form>
+        <p><strong>Cores</strong></p>
+        
+        <!-- value vai deixar a cor escolhida no design no color picker -->
+        <input type="color" value="#ff0000">
+        <br> <br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <form>
+        <p><strong>Checkbox</strong></p>
+        <label for="subscribe">
+            Receber novidades
+            <input type="checkbox" id="subscribe" name="subscribe" >
+            <input type="checkbox" id="subscribe" name="subscribe" checked>
+        </label>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <hr>
+    <fieldset>
+        <legend>Bora tomar um café?</legend>
+        <label for="yep">sim</label>
+        <input type="radio" id="yep" name="coffee" value="yes">
+        <label for="nono">não</label>
+        <input checked type="radio" id="nono" name="coffee" value="no">
+    </fieldset> 
+    <hr>
+    <p><strong>Textarea</strong></p>
+    <label for="report">Report</label>
+    <!-- cols e rows são usadas para almentar e diminuir as colunas e linhas aumentando tambem o tamanho da caixa -->
+    <textarea id="report" cols="10" rows="10"></textarea>
+    <!-- O wrap vai fazer com que o text sigua as margens da caixa criada pelo textarea, desligado o tecto vai continnuar em um linha reta até que o usuario quebre essa linha -->
+    <textarea id="report" wrap="soft"></textarea>
+    <hr>
+    <form>
+        <p><strong>Select</strong></p>
+
+        <!-- select serve para adicionar um input de opções na pagina -->
+        <!-- multiple nesse input vai fazer com que o usuario selecione mais de uma opção -->
+        <select name="carmodel" id="carselect" multiple>
+            <option value="">Selecione um nome</option>
+            <option value="nome1">Kaio </option>
+            <option value="nome2">Bruno</option>
+        </select>
+        <br>
+        <hr>
+        <!-- Size nesse input junto com o multiple vai fazer com que seja definido quantas opçoes vão ser mostradas na box de seleção-->
+        <select name="carmodel" id="carselect" multiple size="1">
+            <option value="">Selecione um nome</option>
+            <option value="nome1">Kaio </option>
+            <option value="nome2">Bruno</option>
+        </select>
+        <br>
+        <hr>
+        <label>Plese choose one pet or more pets:
+            <select name="pets" multiple size="8">
+                <!--optgroup serve como formatação do seu input select fazendo grupoos de opções no select-->
+            <optgroup label="4-legged pets">
+                <option value="dog">dog</option>
+                <option value="horse">horse</option>
+                <option value="pig" disabled>pig</option>
+            </optgroup>
+            <optgroup label="Flying pets">
+                <option value="parrot">Parrot</option>
+                <option value="macaw">Macaw</option>
+                <option value="albatross">Albatross</option>
+            </optgroup>
+        </select>
+        <button type="submit">Enviar</button>
+        </label>
+    </form>
+    <br>
+    <hr>
+    <form>
+        <p><strong>Search</strong></p>
+        <!-- um input do tipo search é uma barra de pesquisa na sua pagina -->
+        <!-- usando o atributo datalist no input search vai dar opções ao usuario para pesquisar, "podendo dar um modernizada no javascript botando pesquisas recentes" -->
+        <datalist id="searchterms">
+            <option>Kaio</option>
+            <option>Bruno</option>
+            <option>Barbosa</option>
+        </datalist>
+        <input type="search" name="q" list="searchterms">
+    </form>
+    <br>
+    <hr>
+    <form>
+    <datalist id="searchterms">
+        <option>Kaio</option>
+        <option>Bruno</option>
+        <option>Barbosa</option>
+    </datalist>
+    <!-- aria-label é uma forma de substituir o label padrão para os leitores de tela, assim que o leitor de tela passa pelo input com esse  atributo, ele vai ser lido com os dados do aria-label -->
+    <input type="search" name="q" list="searchterms" aria-label="Caixa de pesquisa">
+</form>
+<br>
+<hr>
+<form>
+    <p><strong>Number</strong></p>
+    <!-- O atributo min vai dá a permição de valor minimo ao input e max a mesma coisa-->
+    <input type="number" min="2" max="4">
+    <br>
+    <hr>
+    <!-- o atributo step é para o passador de numeros pular os numero de 5 em 5 por exemplo -->
+    <input type="number" step="5">
+    
+    <button type="text">Enviar</button>
+</form>
+<br>
+<hr>
+<form>
+    <p><strong>range</strong></p>
+    <input type="range" min="1" max="80">
+    <button type="submit">Enviar</button>
+</form>
+<br>
+<hr>
+<form>
+    <p><strong>Data</strong></p>
+
+    <input type="date">
+    <br>
+    <hr>
+    <input type="datetime-local">
+    <br>
+    <hr>
+    <input type="time">
+    <br>
+    <hr>
+    <input type="week">
+    <br>
+    <hr>
+    <input type="month">
+
+    <button type="submit">Enviar</button>
+</form>
+</body>
+
+<script src="index.js"></script>

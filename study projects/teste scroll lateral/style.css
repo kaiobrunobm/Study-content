@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial,sans;
+    font-weight: bold;
+    color: white;
+}
+
+img {
+    width: 100%;
+}
+
+.media-element {
+    padding: 2rem;
+    margin-top: 20px;
+    background: rgb(59, 59, 59);
+    border-radius: 20px;
+}
+
+.media-element > img {
+    border-radius: 20px;
+    inline-size: 100%;
+    /* aspect-ratio: 16 / 9;
+    object-fit: cover; */
+}
+
+.media-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 22%;
+    padding: 2rem;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
+
+}

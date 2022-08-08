@@ -1,0 +1,51 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap';
+
+/*Acabamos de criar um comentario no css*/
+/*Anatomia*/
+
+/*Seletores*/
+
+/*# {
+    margin: 0;
+}
+#container {
+    width: 400px;
+}*/
+
+#titulo {
+    margin: 40px;
+}
+
+h1, h2{
+    color: aquamarine;
+    background: grey;
+    font-size: 60px;
+}
+
+/*Caixas*/
+
+h3{
+    border: 1px solid red;
+    margin: 200px;
+    padding: 60px;;
+}
+/*CSS é uma linguagem cascata logo cada as ordens das tags determinam a força/prioridade de cada uma
+essa prioridade de sequencia é essa
+elements 1
+attribute selectors 10
+ID selector 100
+inline 1000
+*/
+/*at-rules*/
+/*
+@import serve para incluir um CSS externo.
+@media são regras condicionais para vários dispositivos.
+@font-face é para colocar fontes externas.
+@keyframes serve para as animations do CSS.
+*/
+/*p {
+	-webkit-background-clip: text; Chrome, Safari, iOS e Android
+	-moz-background-clip: text;  Mozilla (Firefox) 
+	-ms-background-clip: text;  Internet Explorer ou Edge
+	-o-background-clip: text;  Opera */
+    /*Prefixo para novas funçoes do css que talvez algum navegador nao suporte totalmente*/

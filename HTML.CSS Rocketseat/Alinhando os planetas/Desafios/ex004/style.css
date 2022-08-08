@@ -1,0 +1,12 @@
+button {
+    display: flex;
+    align-items: center;
+    line-height:0;
+    gap: .4rem;
+    border-radius:1rem;
+}
+
+button span {
+    width: 2rem;
+    height: 2rem;
+}

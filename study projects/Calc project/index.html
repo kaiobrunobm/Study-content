@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icons8-calculadora-70.png" type="image/png">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <div class="background">
+            <h2>Kaio Bruno Barbosa Magalhães</h2>
+        <div class="calculator">
+            <h2>Calculadora</h2>
+            <p id="result"></p>
+            <table>
+                <tr>
+                    <td><button class="btn" onclick="clean()">C</button></td>
+                    <td><button class="btn" onclick="del()"><span class="material-icons-sharp">backspace</span></button></td>
+                    <td><button class="btn" onclick="insert('/')">÷</button></td>
+                    <td><button class="btn" onclick="insert('*')">x</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('7')">7</button></td>
+                    <td><button class="btn" onclick="insert('8')">8</button></td>
+                    <td><button class="btn" onclick="insert('9')">9</button></td>
+                    <td><button class="btn" onclick="insert('-')">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('4')">4</button></td>
+                    <td><button class="btn" onclick="insert('5')">5</button></td>
+                    <td><button class="btn" onclick="insert('6')">6</button></td>
+                    <td><button class="btn" onclick="insert('+')">+</button></td>
+                </tr>
+                <tr>
+                    <td><button class="btn" onclick="insert('1')">1</button></td>
+                    <td><button class="btn" onclick="insert('2')">2</button></td>
+                    <td><button class="btn" onclick="insert('3')">3</button></td>
+                    <td rowspan="2"><button class="btn" onclick="calculate()" style="height: 106px; " >=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button class="btn" style="width: 106px; " onclick="insert('0')">0</button></td>
+                    <td><button class="btn" onclick="insert('.')">.</button></td>
+                </tr>
+            </table>
+            <footer>
+                <a href="#"> <strong>&lt;</strong> Meu portifólio</a>
+            </footer>
+        </div>
+        </div>
+    </main>
+    <!-- <footer>
+        <a href="#"> <strong>&lt;</strong> Meu portifolio</a>
+    </footer> -->
+<script src="index.js"></script>
+</body>
+</html>

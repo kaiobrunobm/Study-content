@@ -1,0 +1,9 @@
+#area {
+    font: bold 20pt Arial;
+    background: rgb(117, 194, 233);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    cursor: pointer;
+}

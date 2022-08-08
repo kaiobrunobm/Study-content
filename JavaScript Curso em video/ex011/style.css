@@ -1,0 +1,11 @@
+body {
+    font: normal 18pt Arial;
+}
+
+input {
+    font: normal 18pt Arial;
+}
+
+.resultado {
+    margin-top: 20px;
+}

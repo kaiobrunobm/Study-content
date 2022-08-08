@@ -1,0 +1,84 @@
+*:hover{
+    outline: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.icon {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 50%;
+    padding: 15px;
+    margin: 70px 20px;
+    width: 50px;
+    height: 50px;
+
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    -webkit-box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.166);
+    box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.166);
+    cursor: pointer;
+
+}
+
+.tooltip {
+    position: relative;
+    top: 0;
+    font-size: 14px;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10x 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10x 10px rgba(0, 0, 0,1);
+    opacity: 0;
+    transition: .4s
+}
+
+.tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: .4s; 
+}
+
+.icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+    .html:hover,
+    .html:hover .tooltip,
+    .html:hover .tooltip::before,
+    .html:hover  .html-icon{
+        background: #ff4c1e;
+        color: white;
+    }
+
+    .css:hover,
+    .css:hover .tooltip,
+    .css:hover .tooltip::before,
+    .css:hover  .html-icon{
+        background: #0065f4;
+        color: white;
+    }
+ 
+    .js:hover,
+    .js:hover .tooltip,
+    .js:hover .tooltip::before,
+    .js:hover  .html-icon{
+        background: #ffdf00;
+        color: white;
+    }

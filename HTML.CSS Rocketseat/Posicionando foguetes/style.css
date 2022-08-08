@@ -1,0 +1,85 @@
+/* * {
+  margin: 0;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 0px;
+}
+.box1 {
+  background-color: rgba(255, 0, 0, 0.658);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 4;
+}
+.box2 {
+  background-color: rgba(0, 255, 0, 0.658);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+}
+.box3 {
+  background-color: rgba(0, 0, 255, 0.658);
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+} */
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-rows: 30px 1fr 40px ;
+    grid-template-columns: 1fr 80px;
+}
+header {
+    grid-area: header;
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+main {
+    grid-area: main;
+    background-color: red;
+}
+aside {
+    grid-area: aside;
+    background-color: blue;
+}
+footer {
+    grid-area: footer;
+    background-color: gray;
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+}
+div, section{
+width: 100px;
+height: 100px;
+margin: 20% auto;
+
+border: 20px solid red;
+border-top: dashed green 4px;
+box-sizing: border-box;
+
+}
+

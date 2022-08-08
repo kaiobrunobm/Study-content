@@ -1,0 +1,60 @@
+/* seletores child servem para adicionar mais especificação na seleção no caso first-child significa que é o primeiro "Filho" podendo tambem usar o last-child*/
+/* ul li:firs  bold; 
+    color: red; 
+} */
+
+/* nesse caso o nth-child vai é uma pseudo class puxando de  article não a cuild de p sendo assim a child 1 desse codigo vai ser o h3*/
+/* como o p child 1 não existe o codigo não irá funcionar */
+/* article p:nth-child(1) {
+    font-weight: bold;
+    font-size: 18px;
+    color: purple;
+} */
+/* já aqui o codigo puxa certinho o h3 child 1 e faz suas alterações indicadas */
+/* article h3:nth-child(1) {
+    font-weight: bold;
+    font-size: 18px;
+    color: purple;
+} */
+/* como no codgio anterior puxar uma tag com last child pode ter seus erros, já aqui o nth-of-type é mais preciso nas escolhas deixando somente a posicao dada por mim. */
+/* article p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 18px;
+    color: red;
+}
+article p:nth-of-type(2) {
+    font-weight: bold;
+    font-size: 18px;
+    color: blue;
+}
+article p:nth-of-type(3) {
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+} */
+/* os seletores even e odd sã os famosos par ou impar, ou seja o codigo abaixo só irá funcinar nos numeros impar (even) ou odd (par) podendo sempre almentar a quantidade de dados e o codigo sempre ir adicionando a mudança */
+/* ul li:nth-child(odd) {
+    color: black;
+    background: #eee;
+} 
+ul li:nth-child(odd) {
+color: gray;
+} */
+/* ações do usuario são destinadas a estilos que mudam quando o usuario faz algo na pagina, como cliques, passsar o mause e etc, podendo alterar a cor, tamanho e adicionar animações nessas ações. Hover é  uma dessas ações de usuario */
+a:hover {
+color: red;
+}
+input:focus {
+    border-color: blue;
+    outline: none
+}
+input:disabled {
+    background-color: rgba(75, 23, 23, 0.452);
+}
+input:required {
+    background-color: rgba(5, 90, 5, 0.438);
+}
+input:focus:required {
+    border-color: green;
+    outline: none
+}
