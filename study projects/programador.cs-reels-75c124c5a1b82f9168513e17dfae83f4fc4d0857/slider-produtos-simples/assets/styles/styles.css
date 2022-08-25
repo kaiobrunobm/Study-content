@@ -99,12 +99,6 @@ h1::after {
 
 }
 
-.slider .card .price h5:first-child {
-    font-weight: 400;
-    text-decoration: line-through;
-    color: #b6b7b9;
-}
-
 .slider .card .price h5:last-child {
     font-weight: 600;
     color: #747d89;
