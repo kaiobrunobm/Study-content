@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rumo a marte - OnebitX</title>
+
+    <!-- Favicon Link -->
+    <link
+      rel="shortcut icon"
+      href="./images/FAVICON-SPACEX.png"
+      type="image/x-icon"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="container bg-dark">
+        <img
+          src="./images/logoOneBitDark.png"
+          alt="Onebitcode Logo"
+          class="main-logo"
+        />
+        <form>
+          <label for="your-name">1 - Qual o seu nome?</label>
+          <div class="your-name">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                >Primeiro Nome</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="João"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1"
+                >Segundo Nome
+              </span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Silva"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <label for="your-gender">2 - Qual seu genêro?</label>
+          <div class="your-gender">
+            <div class="gender-man">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="man"
+              />
+              <label for="man">Homem</label>
+            </div>
+            <div class="gender-woman">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="woman"
+              />
+              <label for="woman">Mulher</label>
+            </div>
+            <div class="gender-ocult">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="gender"
+                id="ocult"
+              />
+              <label for="ocult">Prefiro não informar</label>
+            </div>
+          </div>
+          <label for="knowledge"
+            >3 - Marque os treinamentos que você fez:</label
+          >
+          <div class="knowledge">
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="basic-astronaut"
+              />
+              <label class="form-check-label" for="basic-astronaut"
+                >Treinamento básico de astronauta</label
+              >
+            </div>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="fisic-basic"
+              />
+              <label class="form-check-label" for="fisic-basic"
+                >Treinamento físico básico</label
+              >
+            </div>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="advenced-astronaut"
+              />
+              <label class="form-check-label" for="advanced-astronaut"
+                >Treinamento avançado de astronauta</label
+              >
+            </div>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="fisic-intense"
+              />
+              <label class="form-check-label" for="fisic-intense"
+                >Treinamento físico intenso</label
+              >
+            </div>
+          </div>
+          <label for="qualities"
+            >4 - Quais você acha que são suas qualidades?</label
+          >
+          <div class="qualities">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="proactive"
+              id="proactive"
+            />
+            <label for="proactive">Proativo</label>
+
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="resistant"
+              id="resistant"
+            />
+            <label for="resistant">Resistente</label>
+
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="throw-up-easy"
+              id="throw-up-easy"
+            />
+            <label for="throw-up-easy">Não vomito fácil</label>
+
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="martians"
+              id="martians"
+            />
+            <label for="martians">Não temo marciano</label>
+
+            <input
+              class="form-check-input"
+              type="checkbox"
+              name="star-wars"
+              id="star-wars"
+            />
+            <label for="star-wars">Já vi todos os star wars</label>
+          </div>
+
+          <button class="btn btn-outline-danger" type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        Feito por Kaio Bruno Onebitcode &copy; todos os direitos reservados -
+        2022
+      </p>
+    </footer>
+
+    <!-- Bootstrap Javascript -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

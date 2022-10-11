@@ -1,0 +1,5 @@
+.container {
+  p {
+    @include text-style(22px, #00ff00, Arial, bold);
+  }
+}

@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  height: 100vh;
+  background-color: rgb(255, 0, 0);
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

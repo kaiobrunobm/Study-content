@@ -1,0 +1,35 @@
+.btn, .btn-compra {
+  width: 125px;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  margin-top: 10px;
+}
+.btn.btn-vender, .btn-vender.btn-compra {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.btn.btn-vender:hover, .btn-vender.btn-compra:hover {
+  border: 2px solid black;
+}
+.btn.btn-troca, .btn-troca.btn-compra {
+  background-color: yellow;
+  color: white;
+  cursor: pointer;
+}
+.btn.btn-troca:hover, .btn-troca.btn-compra:hover {
+  border: 2px solid black;
+}
+
+.btn-compra {
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+.btn-compra:hover {
+  border: 2px solid black;
+}
+
+/*# sourceMappingURL=style.css.map */

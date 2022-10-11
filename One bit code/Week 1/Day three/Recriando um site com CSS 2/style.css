@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,700&display=swap");
+
+* {
+  margin: 0;
+}
+
+.blogSection {
+  max-width: 80%;
+  min-width: 600px;
+  margin: 0 auto;
+  background-color: #fffafa;
+}
+
+section {
+  padding: 20px 50px;
+}
+
+.blogsDate {
+  font-family: "Roboto", sans-serif;
+  color: #00a8a8;
+  margin: 18px 0 30px 0;
+}
+
+.blogsTitle {
+  font-family: "Montserrat", sans-serif;
+  margin: 18px 0 30px 0;
+}
+
+hr {
+  border: 1px solid #ccc;
+}
+
+.blogsParagraph {
+  font-family: "Open Sans", sans-serif;
+  margin: 18px 0 30px 0;
+}
