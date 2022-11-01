@@ -1,0 +1,144 @@
+.container00.container01-falcon9 {
+  background-image: url(/images/falcon9/01.jpg);
+
+  .container01-falcon9-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+  }
+
+  .falcon9-title {
+    font-size: 90px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+}
+
+.container00.container02-falcon9 {
+  background-image: url(/images/falcon9/02.jpg);
+
+  .container02-content {
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+
+    .container02-content-paragraph {
+      font-size: 22px;
+      width: 640px;
+      line-height: 50px;
+    }
+  }
+}
+
+.numbers {
+  background-color: $standard-bg-color;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .numbers-title {
+    font-size: 90px;
+  }
+
+  .numbers-subtitle {
+    font-size: 20px;
+  }
+}
+
+.container00.carousel01 {
+  background-image: url(/images/falcon9/03.jpg);
+}
+
+.container00.carousel02 {
+  background-image: url(/images/falcon9/04.jpg);
+}
+
+.container00.carousel03 {
+  background-image: url(/images/falcon9/05.jpg);
+}
+
+.container00.carousel04 {
+  background-image: url(/images/falcon9/05.jpg);
+}
+
+.container00.carousel05 {
+  background-image: url(/images/falcon9/07.jpg);
+}
+
+.container00.container04-falcon9 {
+  background-image: url(/images/falcon9/08.jpg);
+}
+
+.container00.carousel2-01 {
+  background-image: url(/images/falcon9/09.jpg);
+}
+
+.container00.carousel2-02 {
+  background-image: url(/images/falcon9/10.jpg);
+}
+
+.container00.carousel2-03 {
+  background-image: url(/images/falcon9/11.jpg);
+}
+
+.container00.carousel2-04 {
+  background-image: url(/images/falcon9/12.jpg);
+}
+
+.container00.carousel2-05 {
+  background-image: url(/images/falcon9/13.jpg);
+}
+
+.container00.carousel2-06 {
+  background-image: url(/images/falcon9/14.jpg);
+}
+
+.container00.container06-falcon9 {
+  background-color: $standard-bg-color;
+  height: 85vh;
+
+  .container06-content {
+    padding-top: 320px;
+  }
+}
+
+.carousel-paragraph {
+  background-color: $standard-bg-color;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+// Media queries
+
+@media (max-width: 770px) {
+  .numbers {
+    .numbers-title {
+      font-size: 80px;
+    }
+
+    .numbers-subtitle {
+      font-size: 18px;
+    }
+  }
+
+  #overViewPosition {
+    padding-top: 35%;
+  }
+
+  .container02-content-paragraph {
+    width: auto;
+  }
+}
+
+@media (max-width: 575px) {
+}

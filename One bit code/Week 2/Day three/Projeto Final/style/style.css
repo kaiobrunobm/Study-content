@@ -1,0 +1,331 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: hsl(0deg, 0%, 100%);
+}
+
+header {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.container00 {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 15vh;
+}
+footer .copyOBC {
+  font-size: 15px;
+  font-weight: 500;
+  color: #555252;
+}
+footer a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.2s ease-in;
+}
+footer a:hover {
+  color: #555252;
+}
+
+#button {
+  padding: 15px 35px;
+  border: 2px solid white;
+}
+
+.container00.container06-all {
+  background-color: black;
+  height: 85vh;
+}
+.container00.container06-all .container06-content {
+  padding-top: 400px;
+}
+
+@media (max-width: 405px) {
+  .logo-header {
+    width: 180px;
+    margin-top: 15px;
+  }
+  .social-medias {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+  }
+}
+@media (max-width: 350px) {
+  .logo-header {
+    width: 150px;
+    margin-top: 15px;
+  }
+}
+.container00.container01 {
+  background-image: url(../images/home/01.jpg);
+}
+
+.container00.container02 {
+  background-image: url(../images/home/02.gif);
+}
+
+.container00.container03 {
+  background-image: url(../images/home/03.jpg);
+}
+
+.container00.container04 {
+  background-image: url(../images/home/04.jpg);
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  width: 550px;
+}
+
+.mediumTitle {
+  width: 650px;
+}
+
+.emailOBC {
+  color: #555252;
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+  .shortTitle,
+.mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
+.container00.container01-falcon9 {
+  background-image: url(/images/falcon9/01.jpg);
+}
+.container00.container01-falcon9 .container01-falcon9-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+}
+.container00.container01-falcon9 .falcon9-title {
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.container00.container02-falcon9 {
+  background-image: url(/images/falcon9/02.jpg);
+}
+.container00.container02-falcon9 .container02-content {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.container00.container02-falcon9 .container02-content .container02-content-paragraph {
+  font-size: 22px;
+  width: 640px;
+  line-height: 50px;
+}
+
+.numbers {
+  background-color: black;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.numbers .numbers-title {
+  font-size: 90px;
+}
+.numbers .numbers-subtitle {
+  font-size: 20px;
+}
+
+.container00.carousel01 {
+  background-image: url(/images/falcon9/03.jpg);
+}
+
+.container00.carousel02 {
+  background-image: url(/images/falcon9/04.jpg);
+}
+
+.container00.carousel03 {
+  background-image: url(/images/falcon9/05.jpg);
+}
+
+.container00.carousel04 {
+  background-image: url(/images/falcon9/05.jpg);
+}
+
+.container00.carousel05 {
+  background-image: url(/images/falcon9/07.jpg);
+}
+
+.container00.container04-falcon9 {
+  background-image: url(/images/falcon9/08.jpg);
+}
+
+.container00.carousel2-01 {
+  background-image: url(/images/falcon9/09.jpg);
+}
+
+.container00.carousel2-02 {
+  background-image: url(/images/falcon9/10.jpg);
+}
+
+.container00.carousel2-03 {
+  background-image: url(/images/falcon9/11.jpg);
+}
+
+.container00.carousel2-04 {
+  background-image: url(/images/falcon9/12.jpg);
+}
+
+.container00.carousel2-05 {
+  background-image: url(/images/falcon9/13.jpg);
+}
+
+.container00.carousel2-06 {
+  background-image: url(/images/falcon9/14.jpg);
+}
+
+.container00.container06-falcon9 {
+  background-color: black;
+  height: 85vh;
+}
+.container00.container06-falcon9 .container06-content {
+  padding-top: 320px;
+}
+
+.carousel-paragraph {
+  background-color: black;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#overViewPosition {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+@media (max-width: 770px) {
+  .numbers .numbers-title {
+    font-size: 80px;
+  }
+  .numbers .numbers-subtitle {
+    font-size: 18px;
+  }
+  #overViewPosition {
+    padding-top: 35%;
+  }
+  .container02-content-paragraph {
+    width: auto;
+  }
+}
+.container00.container01-human-space-flight {
+  background-image: url(/images/humanFlight/01.jpg);
+}
+
+.container00.container02-human-space-flight {
+  background-image: url(/images/humanFlight/02.jpg);
+}
+
+.container00.container03-human-space-flight {
+  background-image: url(/images/humanFlight/03.jpg);
+}
+
+.container00.container04-human-space-flight {
+  background-image: url(/images/humanFlight/04.jpg);
+}
+
+.container00.container05-human-space-flight {
+  background-image: url(/images/humanFlight/05.jpg);
+}
+
+.container01-human-space-flight-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  line-height: 100px;
+}
+.container01-human-space-flight-content h1 {
+  font-size: 120px;
+}
+.container01-human-space-flight-content p {
+  font-size: 30px;
+  font-weight: 300;
+}
+.container01-human-space-flight-content .arrow-down-human-space-flight {
+  display: inline-block;
+  width: 140px;
+  margin-top: 5px;
+}
+
+.container02-text-top {
+  height: 25vh;
+  background-color: black;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container02-text-top .container02-text-top-paragraph {
+  width: 800px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #d8d8d8;
+}
+.container02-text-top a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-content {
+  line-height: 40px;
+}
+
+.allContainers-title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.allContainers-subtitle {
+  font-weight: 300;
+}
+
+#right-content {
+  margin-left: 55%;
+  padding-top: 15%;
+}
+
+#left-content {
+  margin-left: 6%;
+  padding-top: 15%;
+}
+
+/*# sourceMappingURL=style.css.map */

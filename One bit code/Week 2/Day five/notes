@@ -1,0 +1,133 @@
+// O que é uma linguaguem de programação
+
+  É um conjunto de instruções para o computador. Diferente do HTML e CSS apenas o JavaScript é uma linguagem de programação por exemplo o CSS é uma linguagem de estilização, ela é responsavel pelo estilo/aparencia do site, já o JavaScript é responsavel pelo comportamento de algo dentro do site ou programa.
+  \\
+  As linguagens de programação são dividas em duas formas de compreenção, as de baixo nivel e as de auto nivel. As linguagem de auto nivel são aquelas que sua linguaguem é mais proxima da humana, já a de baixo nivel, sua linguagem é mais proxima da maquina.
+  \\
+  Elas tambem podem ser compiladas ou interpretadas, as compiladas são aquelas que você precisa executar que seu código vai rodar de alguma forma, já as linguagem interpretada são aquelas onde existe um tecnologia que vai ficar excutando seu código e interpretando de alguma forma.
+
+// O que é JavaScript
+
+  O JavaScript é uma linguagem de programação criada  em 1995 para ser utilizada em um navegador web chamado Netscape, não tem nenhuma semelhança ou contato com a linguagem Java à não ser seu nome. Seu nome oficial é ECMAScript mas ser chamada de JavaScript não tem nenhum problema, é uma linguagem de programação de alto nivel e interpretada normalmente por um navagador no frontend e é uma linguagem Multiparadigma.
+  O JavaScript é a principal linguagem de programação utilizada nos navegadores web junto com HTML e CSS formam as tecnologias web. Ele tambem pode ser usada fora do navegador utilizando o nodeJS no backend
+
+// Tipos de dados
+
+  No JavaScript os dados podem ter vários tipos, sendo alguns deles os primitivos;
+  - Number e bigint 
+  O Number são valores numericos comuns inteiros e decimais/float 
+  O bigint é usado para dados numericos grandes, onde o tipo number não dá de conta
+
+  - String
+  O tipo string são dados em forma de texto, dados string são usados com aspas, "" '' `` essas são as aspas aceitas pelo dado string, isso é uma forma de diferenciar os dados string de number já que o "0" é uma dado string e não number.
+  Alguns comandos de manuseio de string são o [] e o .length o [] vai puxar alguma informação do dado, por exemplo, "kaio"[0] vai puxar o 1 caracter da string, e o .length vai puxar o comprimento do dado, por exemplo, "kaio".length vai voltar o valor 4 de 4 caracteres.
+
+  - Boolean
+  É um valor lógico onde seu valor vai ser 0 ou 1, verdadeiro ou falso.
+
+  - Null e undefined
+  O null é um valor nulo/vazio/não vale nada, mas existe um diferença entre um valor não definido e um valor definido como nulo. Essa é a difecença entre null e undefined, já que um recebe o valor nulo, e o outro não recebeu nenhum valor.
+
+  Esses são os tipos primitivos.
+
+  E existem tambem os outros valores, alguns deles são o Objetos e funções.
+
+// Variáveis
+
+  Variáveis servem para armazenar os dados apresentados anteriormente. Para criar essa variável podemos usar os comandos;
+  - var
+  var é uma formar antiga de criar uma variável.
+  - let 
+  let é a forma mais recente de moderna de criar uma variável
+  - const
+  Já o const é uma forma de criar uma variável que não muda ela vai ser constantemente o valor que for declarado para no primeiro const
+
+  Trabalhar com variáveis são algo bastante complicado apenas pelo motivo de nomear variáveis, já que quando um código tem variás variáveis o você tem que saber nomear cada variáveis com significados para você saber o que aquela variável está armazenando ou fazendo.
+  Algumas regras para nomear são;
+  - Não é permitido espaços em variáveis logo fazemos assim let nomeDoUsuario para ficar mais facil de let.
+  - Temos também a forma usando o underline dessa forma let user_name ...
+
+//Operadores e expressões
+
+
+  Os operadores do JavaScript são muitos deles os operadores matemáticos ensinados na escola usando apenas alguns simbolos diferentes;
+  
+  - Aritméticos +, -, *, /, %
+  São a soma subtração multiplicação divisão e a ultima operação é usada para puxar o resto de um divisão.
+
+  - Agrupamento ()
+  Assim como na matemática vai ter seus suas sequências da matemática e o () vai fazer com que essa sequência pode mudar.
+
+  - Atribuição =, +=, -=, /= e %=
+  Diferente da matemática = não quer dizer igual, sua função é adicionar um valor a algo, por exemplo nas variáveis onde o igual vai adicioanr um valor à variável.
+  Já acima temo o igual com os outros operadores Aritméticos são usados para fazer a operação selecionada e em seguida armazenar o resultado da operação em um variável ou que seja.
+
+  - Encadeamento 
+  O operador de encadeamento é o . na função de ligar um comando em outro como no console onde usamos console.error("error").
+
+  - Incrementar ++ e Decrementar --
+  Esses operadores vão fazer uma soma ou subtração de 1 em algum lugar informado, por exemplo,
+  a = 2, a ++, aqui o a vale 3, e o mesmo acontece com o --
+
+  Fazendo o uso dos operadores conseguimos montar uma expressão, mas expressões não são só usadas em tipos numbers, podem ser usadas em strings também de uma maneira difetente, já que o + não vai somar e sim juntar duas strings.
+
+//Comentários
+
+  Os Comentários no JavaScript são utilizados para o mesmo intuito das outras linguagens descrever o que está acontecendo em um pedaço de código, para quando você ou outra pessoa vá ler o código tenha os comentários para ajudar a entende-lo.
+  O comentário é adicionado com o // para um comentário em uma linha e /*Comentário*/ para um comentário de 2 ou mais linhas.
+
+//Usando o JavaScript no HTML
+
+  Para adicionar o seu código JavaScript no arquivo HTML temos duas formas a por link que vai adicinar o código linkando o arquivo .js no HTML. A outra forma é criando uma tag <script></script> e adicioanando o código dentro dessa tag.
+  Em caso de um script linkado, caso seu HTML tenha vários scripts linkados, a ordem é algo importante já que o código que está no topo vai ser rodado primeiro e em seguida os proximos de cima para baixo.
+  
+// Recursos nativos do navegador 
+  Algum dos recursos do JS com o navegador são esses;
+
+  -console
+  O console. são comandos que vai acontecer no console da página.
+
+  -log(name);
+  O log basico vai printar o conteúdo desejado no console da página.
+  -error(name);
+  O error vai printar o dado desejado com erro, uma cor vermelha e icons destacando que é um erro.
+  -warn(name);
+  O warn vai printar um dado desejado com aviso, com uma cor amarela e com um icon destacando isso.
+
+
+  -window
+  O window é um comando global que vai adicionar alguns recursos na página em si.
+
+  -alert
+  Vai abrir uma alerta na página com a opção de ok para fechar o alert.
+  -prompt
+  o prompt vai abrir um alerta com a opção de digitar algo no no input podendo confirmar esse input ou cancelar fechando o prompt
+  -confirm
+  O confirm vai abrir um alerta com opção de confirma ou não onde os dados que voltam são de formato boolean podendo ser falso e o úsuario cancelar ou true se o usuario confirmar.
+
+// Comparação de dados 
+
+  Comparação de dados é usado para comparar o tipo dos dados ou o valor em si de algum dado com outro, onde o resultado dessa comparação vai retornar o resultado boolean, true ou false. As comparações existentes são;
+  - == e ===  
+  O igual vai fazer o comum que é comparar o valor de um dado e outro, caso o os dois valores forem iguais o resultado vai ser true. a diferença entre o == e o === é que no caso do === o resultado só vai ser true se a semelhança de valores for completa. ou seja 2 == "2" é um valor true, já 2 === "2" é false por que o === vai fazer a comparação completa dos valores.
+  - != e !===
+  Essa comparação é semelhante a de cima só que a diferença ser a comparação de diferença e não igualdade.
+  - >, <, >= e <=
+  Assim como a matemática a comparação é semelhate a elas, sendo eles, maior que, menor que ou mais igual à...
+  
+
+// Operadores lógicos
+
+Operadores lógicos tem como resultado um valor boolean, e não tem muita usabilidade sozinhos, mas combinando com os outros operadores podemos fazer muitas coisa. Os operadores lógicos existentes são;
+
+- and (&)
+  Esse operador que dizer "e" no português, isso é, o resultado da logica so vai ser true, caso o valor dos dois lados seja true, por exemplo,  true && true = true, todo restante é falso.
+- or (||)
+  Ao contrario do & o || vai ser true caso alguma das comparações sejam true, e o resultado false vai ser apenas se os 2 resultados sendo false.
+- not (!)
+  A função do not é negar o resultado de alguma comparação, ou seja, se o resultado de uma comparação for false com o not (!) esse resultado vai ser true, e vice versa, por exemplo. 2 == 2 = true mas ! 2 == 2 = false.
+
+// Estruras condicionais: if e eles
+
+  O if e else são estruturas de condições, isso é, o if else é um bloco de código que só vai rodar caso o resultado da condição seja true, se for false, o else vai rodar.
+  Temos as duas formas de fazer isso

@@ -1,0 +1,85 @@
+.container00.container01-human-space-flight {
+  background-image: url(/images/humanFlight/01.jpg);
+}
+
+.container00.container02-human-space-flight {
+  background-image: url(/images/humanFlight/02.jpg);
+}
+
+.container00.container03-human-space-flight {
+  background-image: url(/images/humanFlight/03.jpg);
+}
+
+.container00.container04-human-space-flight {
+  background-image: url(/images/humanFlight/04.jpg);
+}
+
+.container00.container05-human-space-flight {
+  background-image: url(/images/humanFlight/05.jpg);
+}
+
+.container01-human-space-flight-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  line-height: 100px;
+
+  h1 {
+    font-size: 120px;
+  }
+
+  p {
+    font-size: 30px;
+    font-weight: 300;
+  }
+
+  .arrow-down-human-space-flight {
+    display: inline-block;
+    width: 140px;
+    margin-top: 5px;
+  }
+}
+
+.container02-text-top {
+  height: 25vh;
+  background-color: $standard-bg-color;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container02-text-top-paragraph {
+    width: 800px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #d8d8d8;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.main-content {
+  line-height: 40px;
+}
+
+.allContainers-title {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.allContainers-subtitle {
+  font-weight: 300;
+}
+
+#right-content {
+  margin-left: 55%;
+  padding-top: 15%;
+}
+#left-content {
+  margin-left: 6%;
+  padding-top: 15%;
+}

@@ -1,0 +1,49 @@
+.container00.container01 {
+  background-image: url(../images/home/01.jpg);
+}
+
+.container00.container02 {
+  background-image: url(../images/home/02.gif);
+}
+
+.container00.container03 {
+  background-image: url(../images/home/03.jpg);
+}
+
+.container00.container04 {
+  background-image: url(../images/home/04.jpg);
+}
+
+.arrow-down {
+  display: inline-block;
+  width: 90px;
+  margin-top: 5px;
+}
+
+.titlePadding {
+  padding-top: 200px;
+}
+
+.shortTitle {
+  width: 550px;
+}
+
+.mediumTitle {
+  width: 650px;
+}
+
+.emailOBC {
+  color: $hover-text-color;
+}
+
+@media (max-width: 750px) {
+  .titlePadding {
+    padding-top: 120px;
+  }
+
+  .shortTitle,
+  .mediumTitle {
+    width: auto;
+    font-size: 50px;
+  }
+}
