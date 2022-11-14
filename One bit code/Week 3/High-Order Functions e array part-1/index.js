@@ -1,6 +1,6 @@
 const characters = [
   { level: 28, character_name: "Graall", race: "Choosen", class: "Prist" },
-  { level: 26, character_name: "Dorm", race: "Dark", class: "Warlock" },
+  { level: 26, character_name: "Dorm", race: "Choosen", class: "Prist" },
   { level: 18, character_name: "Harad", race: "Choosen", class: "Paladin" },
   {
     level: 14,
@@ -8,11 +8,10 @@ const characters = [
     race: "Mountain Clã",
     class: "Xamã",
   },
-  { level: 6, character_name: "Sorb", race: "Elf", class: "Warden" },
+  { level: 6, character_name: "Sorb", race: "Elf", class: "Prist" },
   { level: 32, character_name: "Gloom", race: "Elf", class: "Druid" },
-  { level: 30, character_name: "Oddish", race: "Dark", class: "Necromance" },
+  { level: 30, character_name: "Oddish", race: "Choosen", class: "Paladin" },
 ];
-
 // Map
 
 // O map é um high order function que vai separar algum dado informado do objeto acima e trasformar em uma array
@@ -85,3 +84,15 @@ const ordered_characters = characters
 console.log(ordered_characters);
 console.log(characters);
 */
+
+const races = characters.reduce(function (total_value, character) {
+  if (total_value[character.race]) {
+    total_value[character.race].push(character);
+  } else {
+    total_value[character.race] = [character];
+  }
+
+  return total_value;
+}, {});
+
+console.log(races);
