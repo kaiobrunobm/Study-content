@@ -34,13 +34,12 @@ console.log(
     return fisrt_number * second_number;
   })
 );
-
 // Outro exemplo
 
 // Aqui criamos uma array
 const list = ["Apple", "Banana", "Orange", "Lime"];
 
-// criamso uma função high order para passar por cada elemento do array atraves de um indice(criado abaixo) e no final dá um console.log no elemnto no indice e no array novamente
+// Criamso uma função high order para passar por cada elemento do array atraves de um indice(criado abaixo) e no final dá um console.log no elemnto no indice e no array novamente
 function show_element(element, index, array) {
   console.log({ element, index, array });
 }
