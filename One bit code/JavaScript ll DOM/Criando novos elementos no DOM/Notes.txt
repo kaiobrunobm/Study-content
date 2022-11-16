@@ -1,0 +1,19 @@
+----- Criando elemento -----
+
+Depois de selecionar um elemento, temos que aprender a fazer algo com eles, aqui vamos vê como criar um elemento com o DOM;
+
+Para criar um elemento nos temos 2 códigos principais, o createElement e o appendChild;
+
+- createElement
+Syntax = const h1 = document.createElement("h1");
+
+Como ele mesmo diz, vai criar um elemento indicado como acima onde foi criado um elemento h1 e armazenado na variável h1
+Podemos também altera e manosear o elemento adicionar class, id, name, e etc.
+
+Syntax = h1.name/className/id = "h1-class";
+
+Fazendo isso, o elemento já existe, mas agora temos que adicionar em um elemento pai, uma div no caso aqui, e ai que usamos o appendChild
+
+Syntax = div_dom.appendChild(h1);
+
+Em uma variável div_dom que armazena a div puxada do HTML foi adicionado um h1 que criamos.

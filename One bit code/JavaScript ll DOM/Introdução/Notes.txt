@@ -1,0 +1,7 @@
+----- Esse módulo -----
+
+  Nesse módulo vamos aprender sobre o DOM, a junção do HTML com o Javascript em uma
+pagina web de verdade, fazendo paginas dinamicas com o javascript e html.
+  Vamos aprendeder sobre eventos em javascript que são ações para uma pagina web 
+feita com o javascript e vamos criar 2 projetos para treinar nosso DOM
+  

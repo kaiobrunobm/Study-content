@@ -73,7 +73,7 @@ console.log(races);
 
 // Sort
 
-// O sort é usada para organização crescente e decrescente o array.
+// O sort é usada para organização crescente e decrescente o array, diferente das outras fucntions, o sort altera o valor do array original manuseado.
 /*
 const ordered_characters = characters
   .slice()
@@ -84,15 +84,15 @@ const ordered_characters = characters
 console.log(ordered_characters);
 console.log(characters);
 */
-
-const races = characters.reduce(function (total_value, character) {
-  if (total_value[character.race]) {
-    total_value[character.race].push(character);
-  } else {
-    total_value[character.race] = [character];
-  }
-
-  return total_value;
-}, {});
-
-console.log(races);
+console.log(characters);
+characters.sort(function (fisrt_value, second_value) {
+  return second_value.level - fisrt_value.level;
+});
+console.log(characters);
+const characters_ordered = characters
+  .slice()
+  .sort(function (first_value, second_value) {
+    return first_value.level - second_value.level;
+  });
+console.log(characters);
+console.log(characters_ordered);

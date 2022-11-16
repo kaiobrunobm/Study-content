@@ -1,0 +1,23 @@
+----- Eventos -----
+
+  Os eventos do DOM são chamados de execuções javascript por meio de uma 
+ação, essas ações podem ser clique, entrada/saida de mouse e varias outras,
+esses eventos vão ligar uma execução javascript com o html quando esse avento
+for ativado, por exemplo quando no html for clicado em um motão vai ser chamado um
+código javascript.
+  Esse código javascript pode está dentro ou fora do html, mas o recomendado para 
+boa leitura do código é ter um arquivo linkado com o código javascript separado.
+
+----- Syntax -----
+
+HTML
+<button onclick = "on_click()">Button</button>
+
+JavaScript
+function on_click() {
+  alert("Clicked");
+}
+
+  Nesse código de exemplo no JavaScript foi feito um botão com o evento onclick 
+que quando for clicado no botão vai chamar o código JavaScript que no caso foi 
+a function chamada on_click() fazendo rodar a function com o alert dentro.

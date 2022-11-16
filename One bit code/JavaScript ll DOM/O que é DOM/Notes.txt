@@ -1,0 +1,12 @@
+----- DOM -----
+
+O DOM (Document Object Model) é uma forma do JavaScript manosear um documento
+HTML usando, Para o o JavaScript o HTML vira um objeto, com todos os dados
+organizados como um arvores, com elementos pais e filhos, fazendo isso podemos 
+manosear o documento como se fosse um objeto, lendo algo, adicionando algo ao 
+documento, mudando estilos, div e etc
+No JavaScript usamos o document para acessar documet Object
+
+----- Syntax -----
+
+document."Comando ao HTML"

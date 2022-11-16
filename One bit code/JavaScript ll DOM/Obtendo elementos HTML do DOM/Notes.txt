@@ -1,0 +1,26 @@
+----- Selecionar -----
+
+  Selecionar algo no objeto document é algo muito importante para aprender
+já que é pra isso que serve o DOM, manosear o documento HTML com o JavaScript,
+e para fazer isso temos varias formas;
+
+- getElementById
+Syntax = document.getElementById("contact-list")
+
+Usando o getElementById vamos selecionar um elemento do documento HTML de acordo com seu id
+
+- getElementsByTagName
+Syntax = document.getElementsByTagName("li")
+
+O getElementsByTagName vai puxar o elemento de acordo com sua tag, por exemplo h1, h2... o getElementsByTagName vai puxar todos os elemntos li caso utilizar o código exemplo acima.
+
+- getElementsByClassName 
+Syntax = document.getElementsByClassName("contact-list")
+
+O getElementsByClassName assim como com id podemos puxar com o nome da class, mas diferente do id que vai puxar só 1, o class vai puxar todos os elementos de mesma class disponiveis.
+
+- querySelectorAll
+Syntax = document.querySelectorAll(".contact-list")
+
+O querySelectorAll é um selecionador que é capaz de selecionar qualquer elemento class, name, id e etc apenas usando as regras já existente no HTML com . # ...
+E temos o querySelector que diferente do querySelectorAll vai dá um break no primeiro elemento que encontrar, logo não é capaz de selecionar multiplos elementos.
