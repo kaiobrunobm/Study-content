@@ -15,23 +15,54 @@
     />
   </head>
   <body>
-    <h1 class="text-center display-1">
+    <div class="container">
+      <h1 class="text-center display-1">
       <strong>Escalação do Time da seleção</strong>
     </h1>
     <hr />
 
-    <div class="actions-buttons text-center">
-      <button class="btn btn-success" onclick="add_player()">
-        Adicionar Jogador
-      </button>
-      <button class="btn btn-danger" onclick="remove_player()">
-        Remover Jogador
-      </button>
-    </div>
-
     <br />
 
-    <div id="inputs-div" class="text-center mx-5"></div>
+    <div id="inputs-div" class="text-center mx-5">
+
+      <div class="info-player-add">
+        <form class="form">
+          <h2 class="display-2 mb-5">Informações do Jogador</h2>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Posição do Jogador"
+            id="player-position"
+          /><input
+            type="text"
+            class="form-control mt-3"
+            placeholder="Nome do Jogador"
+            id="player-name"
+          /><input
+            type="number"
+            class="form-control mt-3"
+            placeholder="Número do Jogador"
+            id="player-number"
+          /><button type="reset" class="btn btn-success m-3" onclick="add_player()">Escalar</button>
+      </div>
+
+      <hr>
+
+      <div class="info-player-remove">
+        <h2 class="display-2 mb-5">Remoção do Jogador</h2>
+        <input type="number" class="form-control mt-3" id="input-player-number-remove" placeholder="Número do Jogador"/>
+        <button
+          type="reset"
+          class="btn btn-danger m-3"
+          onclick="remove_player()";
+        >
+          Remove Player
+        </button>
+      </div>
+      </form>
+    </div>
+
+    <hr>
 
     <div id="oficial-team">
       <h2 class="text-center display-3 m-5">Time Escalado</h2>
@@ -44,6 +75,8 @@
         <tbody></tbody>
       </table>
     </div>
+    </div>
+    
     <!-- Bootstrap Script -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

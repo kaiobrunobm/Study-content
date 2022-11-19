@@ -1,0 +1,16 @@
+----- Enviado valores do DOM para o Javascript ----
+
+Usando eventos no HTML podemos adicionar uma fuction a esses eventos, adicionando o
+paremetro (this) ao evento temos acesso ao elemento, por exemplo
+
+Syntax:
+ <button onclick="register(this)">Registrar</button>;
+
+ function register(element) {
+
+ }
+
+nesse parametro é retornado o button ao Javascript, caso adicionarmos um this
+parentNode temo acesso ao pai do button, uma div, section, form etc
+fazendo isso temos uma acesso melhor a todos os dados dessa section/div,
+caso seja um form temos acesso aos inputs de forma mais facil
