@@ -1,0 +1,15 @@
+Syntax:
+const name = document.querySelector("input[name = 'name']").value;
+
+Com o uso do querySelector o input[name = 'name'] vai selecionar um input onde os atributos encaixam, por exemplo acima, um input do name = name, pode ser um div[class='algo'] e por ai vai
+
+
+Syntax:
+querySelectorAll("input[name = 'salad']:checked")
+
+Aqui temos o checked junto com um querySelectorAll, isso vai selecionar todos os inputs de name = salad e puxar os input selecionados, por exemplo em um radius ou checkbox.
+
+Syntax:
+event.preventDefault();
+
+O preventDefault vai cancelar a ação padrão do documento HTML de submit ou outro, fazendo com que o formulario não recarregue a pagina ou envie seu valor a um submit e etc.

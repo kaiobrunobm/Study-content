@@ -1,1 +1,20 @@
+----- Trabalhando com eventos -----
 
+Trabalhar com eventos no JavaScript é algo muito importante e é uma 
+recomendação não ter EventListener no documento HTML, para isso precisamos adicionar o evento 
+utilizando o DOM.
+Para adicionar o evento precisamos puxar o elemento onde vamos adicionar, armazenando em uma
+variável por exemplo "button". Depois pegamos esse button e adicionamos um evento nele.
+
+Syntax:
+button.addEventListener("click", function)
+
+Assim adicionamos um evento click com um fucntion de nome function em uma elemento button,
+podemos criar essa fucntion na propria syntax fazendo uma fucntion anonima ou adicinar uma 
+function existente separada.
+
+Em caso de adicinar um parametro a essa funtion em um addEventListener ou removeEventListener 
+esse parametro se torna o elemento onde esse evento está "armazenando" nesse caso seria o button,
+esse button seria monuseado com diversas funções, e temos o parentNode que vai puxar o pai do 
+button que pode ser um div/section e etc. É uma forma facil de inmendar o HTML com JavaScript
+sem muito nós.

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalhando Com Formulários</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 class="text-center display-1">Trabalhando Com Formulários</h1>
+    <hr />
+
+    <h2 class="text-center display-4 mb-5">Montar Pedido</h2>
+    <div class="container">
+      <form id="order-form">
+        <label for="name">Nome:</label>
+        <br />
+        <input class="form-control" type="text" name="name" id="name" />
+        <br /><br />
+
+        <label for="address">Endereço de Entrega:</label>
+        <br />
+        <input class="form-control" type="text" name="address" id="address" />
+        <br /><br />
+
+        <label for="breadType">Tipo de Pão:</label>
+        <br />
+        <select class="form-select" name="bread-type" id="bread-type">
+          <option selected disabled>Selecione uma opção...</option>
+          <option value="3 queijos">3 queijos</option>
+          <option value="Parmesão e orégano">Parmesão e orégano</option>
+          <option value="9 grãos">9 grãos</option>
+          <option value="Italiano branco">Italiano branco</option>
+          <option value="Granola salgada">Granola salgada</option>
+          <option value="Manteiga temperada">Manteiga temperada</option>
+        </select>
+        <br /><br />
+
+        <label class="form-check-label" for="main">Principal:</label>
+        <br />
+        <input
+          class="form-check-input"
+          type="radio"
+          name="main"
+          id="main1"
+          value="Carne"
+        />
+        <label class="form-check-label" for="main1">Carne</label>
+        <input
+          class="form-check-input"
+          type="radio"
+          name="main"
+          id="main2"
+          value="Frango"
+        />
+        <label class="form-check-label" for="main2">Frango</label>
+        <input
+          class="form-check-input"
+          type="radio"
+          name="main"
+          id="main3"
+          value="Vegano"
+        />
+        <label for="main3">Vegano</label>
+        <br /><br />
+
+        <label class="form-check-label" for="salad">Salada:</label>
+        <br />
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="salad"
+          id="salad1"
+          value="Alface"
+        />
+        <label class="form-check-label" for="salad1">Alface</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="salad"
+          id="salad2"
+          value="Tomate"
+        />
+        <label class="form-check-label" for="salad2">Tomate</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="salad"
+          id="salad3"
+          value="Azeitonas"
+        />
+        <label class="form-check-label" for="salad3">Azeitonas</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="salad"
+          id="salad4"
+          value="Cenoura"
+        />
+        <label class="form-check-label" for="salad4">Cenoura</label>
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name="salad"
+          id="salad5"
+          value="Picles"
+        />
+        <label class="form-check-label" for="salad5">Picles</label>
+        <br /><br />
+
+        <label for="observations">Observações:</label>
+        <br />
+        <textarea
+          class="form-control"
+          name="observations"
+          id="observations"
+          cols="30"
+          rows="6"
+        ></textarea>
+        <br /><br />
+
+        <button class="btn btn-success" type="submit">Fechar Pedido</button>
+      </form>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
