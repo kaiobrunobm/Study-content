@@ -1,0 +1,15 @@
+----- Manipulando CSS com Javascript ----
+
+No JavaScript temos algumas maneiras de manipular o Css, nesse exemplo vamos usar um botão para
+mudar o tema da página, temos 2 formas
+
+Syntax: 
+  document.body.style.color = "#212529";
+
+Aqui vamos mudar a os estilo na pagina HTML, adicionando ou mudando o estilo inline
+
+Syntax:
+  document.body.classList.toggle("is-light");
+  document.body.classList.toggle("is-dark");
+
+Usando o toggle temos a função de mudar a class do HTML, fazendo com que o estilo seja formado em uma class no CSS, e quando clicarmos no botão a class mude para outra class com estilos diferentes

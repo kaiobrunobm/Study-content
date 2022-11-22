@@ -1,0 +1,27 @@
+---- Manipulando Atributos com Javascript ----
+
+As formas de alterar um atributo com Javascript
+
+value Syntax: 
+  input.value = "Something";
+
+type Syntax:
+  input.type = "text";
+
+placeholder Syntax:
+  input.placeholder = "Type Something";
+
+disable Syntax:
+  input.setAttribute("disabled", !input.disabled);
+
+  Como o valor de um atributo disable é boolean, podemos negar ele com o !
+  fazendo com que ele seja o contrario do valor atual
+
+data Syntax: 
+
+  input.dataset.nameOfTheDataAtribute = "Something";
+  Em um atributo data muito logo no HTML ele vai ser separado com -, por exemplo
+  name-of-the-data-atribute, mas passando para o Javascript ele pode ser convertido
+  para nameOfTheDataAtribute.
+
+Todos os valores de um atributo podem ser manoseados usando um if ternario
