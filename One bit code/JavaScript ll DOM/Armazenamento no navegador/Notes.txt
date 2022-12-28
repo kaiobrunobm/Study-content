@@ -1,0 +1,13 @@
+// Armazenamento no navegador
+
+  // Session storage
+     É a forma mais simples de armazenar dados direto no navegador, fazendo com que os dados armazenados só estão armazenados no moemento em que a página está aberta e se for fechada os dados são limpos.
+
+  // Local storage
+    Diferente da Session storage o armazenamento no local storage vai permanecer até que um intermediante limpe esses dados podendo ser o JavaScript por exemplo
+
+  // Cookies
+
+    Uma das formas mais usadas para armazenamento de dados em navegadores são os cookies que estão em quase todas as paginas na web hoje em dia. O armazenamento em cookies são feitas onde os dados são armazenados em pequenos arquivos de texto direto no computador do usuário, com data de expiração para serem limpos, fazendo com que mesmo que a página seja aberta e fechada varias vezes os dados ainda vão está salvos e apenas depois de um periodo de tempo esses dados vão ser limpos.
+
+// Pratica
