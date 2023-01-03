@@ -1,0 +1,14 @@
+// Arrow functions
+  Arrow functions são formas mais curtas de codar uma function, do nome arrow a forma pra faze-la é usando um => no lugar da propria palavra function.
+  Usada em functions mais curtas para ficar mais facil de ler e em function anonimas
+  
+  //Syntax
+    const sum = (number_one, number_two) => {
+      ...
+    }
+
+    or
+
+    const sum = (number_one, number_two) => ...
+
+Um momento que são utilizadas bastante são em high order functions já que são "anonimas" e muitas das vezes são functions curtas e até de uma linha só fazendo com que a utilização da arrow function melhor.

@@ -1,0 +1,9 @@
+//Desestruturação de objetos e arrays
+  É uma forma de criar uma variável direto com um dado de um objeto ou array, assim como o "objeto.nome" por exemplo só que de maneira mais facil e rapida.
+
+  Syntax:
+    const {name} = object
+    const [name] = array
+
+  Isso vai criar uma variável name com o name do object, mas no caso do array vai ser em sequencia, por exemplo em um array [1, 2 ,3]
+  const [number1, number2, number3] = array, vai puxar por sequencia e não pelo nome como o objeto.
